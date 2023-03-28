@@ -13,9 +13,13 @@ Para executar o projeto, siga os seguintes passos:
 #### Windows
 
 1.Acesse o site oficial do Node.js (https://nodejs.org/) e faça o download do instalador compatível com a sua versão do Windows.
+
 2.Execute o instalador e siga as instruções do assistente.
+
 3.Abra o prompt de comando (pressione as teclas Win+R, digite cmd e pressione Enter).
+
 4.Para instalar o gerenciador de pacotes npm, execute o comando: npm install npm@latest -g.
+
 5.Para instalar o gerenciador de pacotes yarn, execute o comando: npm install -g yarn.
 
 #### macOS
