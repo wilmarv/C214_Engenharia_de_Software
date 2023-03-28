@@ -6,7 +6,7 @@ export class InformacaoHorarioAtendimento {
 
     public async carregarListaHorarios(): Promise<void> {
         const listaHorarioAtendimento = await axios.get('https://api-fake-inatel/horarios-de-atendimento');
-        
+
         if (Array.isArray(listaHorarioAtendimento.data)) {
             this.lista = listaHorarioAtendimento.data;
             return;

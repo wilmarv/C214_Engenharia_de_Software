@@ -24,7 +24,7 @@ describe("Cenarios de Teste: Teste com a classe InformacaoHorarioAtendimento", (
 
         informacaoHorarioAtendimento.adicionarHorario("Egidio", "Terça 14h às 16h", "Integral", 3, [1]);
 
-        expect(informacaoHorarioAtendimento.listarTodosHorariosAtendimento.length).toEqual(3);
+        expect(informacaoHorarioAtendimento.listarTodosHorariosAtendimento().length).toEqual(3);
     });
 
     test("Caso de teste: Depois de adicionar um horario deve editar com sucesso da sala", async () => {
@@ -104,12 +104,12 @@ describe("Cenarios de Teste: Teste com a classe InformacaoHorarioAtendimento", (
         await informacaoHorarioAtendimento.carregarListaHorarios();
 
         const novoHorario: HorarioAtendimento = {
-            nomeDoProfessor: "Egidio",
+            nomeDoProfessor: "Rangel",
             horarioDeAtendimento: "Segunda, das 14h às 16h",
             periodo: "Noturno",
             sala: 2,
             predio: [1],
         };
-        expect(() => informacaoHorarioAtendimento.editarHorario("Egidio", novoHorario)).toThrow("Horário de atendimento não encontrado");
+        expect(() => informacaoHorarioAtendimento.editarHorario("Rangel", novoHorario)).toThrow("Horário de atendimento não encontrado");
     });
 });
