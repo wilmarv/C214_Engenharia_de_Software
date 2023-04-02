@@ -1,67 +1,24 @@
-import axios from "axios";
-import HorarioAtendimento from "./model/HorarioAtendimento";
+// Função para somar dois números
+export function somar(num1: number, num2: number) {
+    return num1 + num2;
+}
 
-export class InformacaoHorarioAtendimento {
-    private lista: Array<HorarioAtendimento> = [];
+// Função para subtrair dois números
+export function subtrair(num1: number, num2: number) {
+    return num1 - num2;
+}
 
-    public async carregarListaHorarios(): Promise<void> {
-        const listaHorarioAtendimento = await axios.get('https://api-fake-inatel/horarios-de-atendimento');
+// Função para multiplicar dois números
+export function multiplicar(num1: number, num2: number) {
+    return num1 * num2;
+}
 
-        if (Array.isArray(listaHorarioAtendimento.data)) {
-            this.lista = listaHorarioAtendimento.data;
-            return;
-        }
-        this.lista = [];
-    }
-
-    public adicionarHorario(
-        nomeDoProfessor: String,
-        horarioDeAtendimento: String,
-        periodo: String,
-        sala: Number,
-        predio: Array<Number>
-    ): void {
-        const novoHorario = new HorarioAtendimento(
-            nomeDoProfessor,
-            horarioDeAtendimento,
-            periodo,
-            sala,
-            predio
-        );
-        this.lista.push(novoHorario);
-    }
-
-    public editarHorario(
-        nomeDoProfessor: string,
-        novoHorario: HorarioAtendimento
-    ): void {
-        const indice = this.lista.findIndex(
-            (horario) => horario.nomeDoProfessor === nomeDoProfessor
-        );
-        if (indice >= 0) {
-            this.lista[indice] = novoHorario;
-        } else {
-            throw new Error("Horário de atendimento não encontrado");
-        }
-    }
-
-    public deletarHorario(nomeDoProfessor: string): void {
-        const indice = this.lista.findIndex(
-            (horario) => horario.nomeDoProfessor === nomeDoProfessor
-        );
-        if (indice >= 0) {
-            this.lista.splice(indice, 1);
-        } else {
-            throw new Error("Horário de atendimento não encontrado");
-        }
-    }
-
-    public listarTodosHorariosAtendimento(): Array<HorarioAtendimento> {
-        return this.lista;
-    }
-
-    public buscarHorarioAtendimentoPorNome(nomeDoProfessor: string): HorarioAtendimento | undefined {
-        return this.lista.find((horarioAtendimento) => horarioAtendimento.nomeDoProfessor === nomeDoProfessor);
+// Função para dividir dois números
+export function dividir(num1: number, num2: number) {
+    // Verifica se o divisor é igual a zero
+    if (num2 === 0) {
+        return "Não é possível dividir por zero";
+    } else {
+        return num1 / num2;
     }
 }
-export default InformacaoHorarioAtendimento;

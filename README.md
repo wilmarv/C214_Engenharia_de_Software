@@ -1,8 +1,8 @@
-# Exercicio avaliativo de teste unitario com mock
+# Atividade 05 Teste de Unidade
 
 ## Descrição do projeto
 
-O projeto consiste em uma classe que simula uma requisição http ao site do Inatel para popular e visualizar horários de atendimento dos professores. A classe oferece métodos para adicionar, buscar, editar e deletar horários de atendimento dos professores, além de métodos para listar todos os horários de atendimento cadastrados.
+Este projeto tem como objetivo a criação de funções simples de cálculo matemático, como somar, subtrair, multiplicar e dividir. Em seguida, serão desenvolvidos testes automatizados para verificar a confiabilidade dessas funções e demonstrar o aprendizado nas aulas de criação de códigos de teste.
 
 ## Como executar o projeto
 
