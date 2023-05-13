@@ -1,4 +1,4 @@
-package com.example.projeto_flutter
+package com.example.test_mock
 
 import io.flutter.embedding.android.FlutterActivity
 

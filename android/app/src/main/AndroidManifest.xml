@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.projeto_flutter">
+    package="com.example.test_mock">
    <application
-        android:label="projeto_flutter"
+        android:label="test_mock"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
