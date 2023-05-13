@@ -1,3 +1,4 @@
+[![App Test](https://github.com/wilmarv/C214_Engenharia_de_Software/actions/workflows/integracao_continua.yml/badge.svg)](https://github.com/wilmarv/C214_Engenharia_de_Software/actions/workflows/integracao_continua.yml)
 # C214 - Engenharia de Software L2
 
 Projeto em Flutter para realizar as atividades e relatorios aprendidos em aula.
