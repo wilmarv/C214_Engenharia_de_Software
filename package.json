@@ -2,10 +2,10 @@
   "name": "design_patterns",
   "version": "1.0.0",
   "description": "Projeto de ordenação de dados com objetivo de aprimorar conteudo sobre design patterns",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "start": "tsc && node dist/index.js"
+    "start": "ts-node ./src/index.ts"
   },
   "author": "Wilmar Vitor Fonseca",
   "license": "ISC",
